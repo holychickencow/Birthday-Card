@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ffdbe0;
+}
+
+img{
+    height: 210px;
+    width: 450px;
+}
+
+.left{
+    padding-top: 300px;
+    padding-right: 10px;
+    rotate: 270deg;
+}
+
+.right{
+    padding-top: 300px;
+    padding-left: 10px;
+    rotate: 90deg;
+}
+
+.middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    max-width: 33vw;
+    height: 100vh;
+}
+
+#start{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 200%;
+}
+#card{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 150%;
+}
+
+button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #ee87a6;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  button:hover {background-color: #e9658d}
+  
+  button:active {
+    background-color: #e9658d;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  #my-canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+  }
+
+  #my-canvas.active{
+    visibility: visible;
+  }
